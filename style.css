@@ -1,0 +1,64 @@
+:root {
+  --cyan: hsl(193, 38%, 86%);
+  --green: hsl(150, 100%, 66%);
+  --glow: hsla(150, 100%, 66%, 0.75);
+  --light-blue: hsl(217, 19%, 38%);
+  --blue: hsl(217, 19%, 24%);
+  --dark-blue: hsl(218, 23%, 16%);
+  --shadow: hsla(218, 23%, 8%, 0.25);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap");
+
+body {
+  color: var(--cyan);
+  font-family: "Manrope", sans-serif;
+  background-color: var(--dark-blue);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--blue);
+  margin: 2rem;
+  max-width: 600px;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 15px 15px var(--shadow);
+  position: relative;
+}
+
+.id {
+  color: var(--green);
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+}
+
+.advice {
+  font-weight: 800;
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+}
+
+button {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 100%;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--green);
+  padding: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 0 0 15px 15px var(--glow);
+}
+
+.div {
+  margin-bottom: 1rem;
+}

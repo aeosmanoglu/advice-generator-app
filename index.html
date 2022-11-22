@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Advice generator app</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body onload="getQuote()">
+  <article class="card">
+    <p class="id">Advice #<span id="id"></span></p>
+    <p class="advice">"<span id="advice"></span>"</p>
+    <picture>
+      <source media="(max-width: 600px)" srcset="./images/pattern-divider-mobile.svg">
+      <img src="./images/pattern-divider-desktop.svg" class="div">
+    </picture>
+    <button onclick="getQuote()">
+      <img src="./images/icon-dice.svg" alt="">
+    </button>
+  </article>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
